@@ -1,13 +1,10 @@
 import React from 'react';
 import Header from './Header';
-import { UserContext } from './context';
+import { user, UserContext } from './context';
 
 class App extends React.Component {
   state = {
-    userData: {
-      name: 'Nicola Tesla',
-      avatar_url: 'https://avatars3.githubusercontent.com/u10001',
-    },
+    userData: user,
   };
 
   render() {
