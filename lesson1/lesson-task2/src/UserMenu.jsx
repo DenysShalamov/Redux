@@ -1,11 +1,11 @@
 import React from 'react';
-import { UserContext } from './context';
+import { UserDataContext } from './context';
 
 class UserMenu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <span className="menu__greeting">Hello, {this.context.name}</span>
+        <span className="menu__greeting">{`Hello, ${this.context.name}`}</span>
         <img
           alt="User Avatar"
           src={this.context.avatar_url}
@@ -16,6 +16,6 @@ class UserMenu extends React.Component {
   }
 }
 
-UserMenu.contextType = UserContext;
+UserMenu.contextType = UserDataContext;
 
 export default UserMenu;
